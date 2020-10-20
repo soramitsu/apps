@@ -4,13 +4,11 @@
 import React, { useMemo } from 'react';
 import { Route, Switch } from 'react-router';
 import { HelpOverlay, Tabs } from '@polkadot/react-components';
-
+import basicMd from './md/basic.md';
+import Overview from './Overview';
 import { useTranslation } from './translate';
 
 export { default as useCounter } from './useCounter';
-
-import basicMd from './md/basic.md';
-import Overview from './Overview';
 
 interface Props {
   basePath: string;

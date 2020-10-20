@@ -10,7 +10,7 @@ interface Props {
 function Overview ({ className }: Props): React.ReactElement<Props> {
   return (
     <div className={className}>
-     <h1>Bounties</h1>
+      <h1>Bounties</h1>
     </div>
   );
 }
