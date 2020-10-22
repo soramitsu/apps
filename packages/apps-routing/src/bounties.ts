@@ -3,7 +3,7 @@
 
 import { Route } from './types';
 
-import Component, { useCounter } from '@polkadot/app-bounties';
+import Component from '@polkadot/app-bounties';
 
 export default function create (t: <T = string> (key: string, text: string, options: { ns: string }) => T): Route {
   return {
@@ -16,7 +16,6 @@ export default function create (t: <T = string> (key: string, text: string, opti
     group: 'governance',
     icon: 'coins',
     name: 'bounties',
-    text: t<string>('nav.bounties', 'Bounties', { ns: 'apps-routing' }),
-    useCounter
+    text: t<string>('nav.bounties', 'Bounties', { ns: 'apps-routing' })
   };
 }
