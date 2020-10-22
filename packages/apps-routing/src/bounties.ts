@@ -10,11 +10,11 @@ export default function create (t: <T = string> (key: string, text: string, opti
     Component,
     display: {
       needsApi: [
-        'tx.treasury.proposeSpend'
+        'tx.treasury.proposeBounty'
       ]
     },
     group: 'governance',
-    icon: 'gem',
+    icon: 'coins',
     name: 'bounties',
     text: t<string>('nav.bounties', 'Bounties', { ns: 'apps-routing' }),
     useCounter

@@ -8,8 +8,6 @@ import basicMd from './md/basic.md';
 import Overview from './Overview';
 import { useTranslation } from './translate';
 
-export { default as useCounter } from './useCounter';
-
 interface Props {
   basePath: string;
 }
