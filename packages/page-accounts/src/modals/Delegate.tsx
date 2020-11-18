@@ -2,12 +2,12 @@
 // SPDX-License-Identifier: Apache-2.0
 
 import { AmountValidateState } from '../Accounts/types';
+import { Conviction } from '@polkadot/types/interfaces';
 
 import BN from 'bn.js';
 import React, { useState } from 'react';
 import { ConvictionDropdown, InputAddress, InputBalance, Modal, TxButton } from '@polkadot/react-components';
 import { BalanceFree } from '@polkadot/react-query';
-import { Conviction } from '@polkadot/types/interfaces';
 import { BN_ZERO } from '@polkadot/util';
 
 import { useTranslation } from '../translate';

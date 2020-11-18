@@ -24,9 +24,9 @@ import { formatBalance, isTestChain } from '@polkadot/util';
 import { setSS58Format } from '@polkadot/util-crypto';
 import { defaults as addressDefaults } from '@polkadot/util-crypto/address/defaults';
 
+import { ethereumNetworks } from '@polkadot/apps-config/settings';
 import ApiContext from './ApiContext';
 import registry from './typeRegistry';
-import { ethereumNetworks } from '@polkadot/apps-config/settings';
 
 interface Props {
   children: React.ReactNode;

@@ -3,9 +3,9 @@
 
 import { ApiProps } from '@polkadot/react-api/types';
 import { Header } from '@polkadot/types/interfaces';
+import { ThemeProps } from '@polkadot/react-components/types';
 
 import React, { useCallback, useEffect, useRef, useState } from 'react';
-import { ThemeProps } from '@polkadot/react-components/types';
 import styled from 'styled-components';
 import { CardSummary, IdentityIcon, SummaryBox } from '@polkadot/react-components';
 import { useApi } from '@polkadot/react-hooks';

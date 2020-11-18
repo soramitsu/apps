@@ -4,9 +4,9 @@
 import { IconName } from '@fortawesome/fontawesome-svg-core';
 import { DeriveAccountInfo, DeriveAccountRegistration } from '@polkadot/api-derive/types';
 import { AccountId, AccountIndex, Address } from '@polkadot/types/interfaces';
+import { ThemeProps } from '@polkadot/react-components/types';
 
 import React, { useCallback, useContext, useEffect, useState } from 'react';
-import { ThemeProps } from '@polkadot/react-components/types';
 import styled from 'styled-components';
 import registry from '@polkadot/react-api/typeRegistry';
 import { AccountSidebarToggle } from '@polkadot/app-accounts/Sidebar';

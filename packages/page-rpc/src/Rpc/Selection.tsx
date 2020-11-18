@@ -4,11 +4,11 @@
 import { ParamDef, RawParam } from '@polkadot/react-params/types';
 import { QueueTxRpcAdd } from '@polkadot/react-components/Status/types';
 import { DefinitionRpcExt } from '@polkadot/types/types';
+import jsonrpc from '@polkadot/types/interfaces/jsonrpc';
 
 import React, { useCallback, useState } from 'react';
 import { Button, InputRpc } from '@polkadot/react-components';
 import Params from '@polkadot/react-params';
-import jsonrpc from '@polkadot/types/interfaces/jsonrpc';
 import { getTypeDef } from '@polkadot/types/create';
 import { isNull } from '@polkadot/util';
 

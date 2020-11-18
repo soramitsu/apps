@@ -1,16 +1,17 @@
 // Copyright 2017-2020 @polkadot/react-components authors & contributors
 // SPDX-License-Identifier: Apache-2.0
 
-import { WithTranslation } from 'react-i18next';
 import { IconName } from '@fortawesome/fontawesome-svg-core';
 import { SubmittableExtrinsic } from '@polkadot/api/promise/types';
-import { Abi } from '@polkadot/api-contract';
 import { ActionStatus } from '@polkadot/react-components/Status/types';
 import { TxState } from '@polkadot/react-hooks/types';
 import { AccountId, Index } from '@polkadot/types/interfaces';
 import { ButtonProps } from './Button/types';
 import { InputAddressProps } from './InputAddress/types';
 import { TxCallback, TxFailedCallback } from './Status/types';
+
+import { WithTranslation } from 'react-i18next';
+import { Abi } from '@polkadot/api-contract';
 
 export type StringOrNull = string | null;
 

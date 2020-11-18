@@ -2,11 +2,11 @@
 // SPDX-License-Identifier: Apache-2.0
 
 import { AccountId, AccountIndex, Address } from '@polkadot/types/interfaces';
+import { KeyringItemType } from '@polkadot/ui-keyring/types';
 
 import BN from 'bn.js';
 import React from 'react';
 import styled from 'styled-components';
-import { KeyringItemType } from '@polkadot/ui-keyring/types';
 
 import { classes, toShortAddress } from './util';
 import AccountName from './AccountName';

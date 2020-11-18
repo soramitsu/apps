@@ -5,10 +5,10 @@
 
 import { DefinitionRpcExt } from '@polkadot/types/types';
 import { DropdownOptions } from '../util/types';
+import jsonrpc from '@polkadot/types/interfaces/jsonrpc';
 
 import React, { useCallback, useEffect, useState } from 'react';
 import { useApi } from '@polkadot/react-hooks';
-import jsonrpc from '@polkadot/types/interfaces/jsonrpc';
 
 import LinkedWrapper from '../InputExtrinsic/LinkedWrapper';
 import SelectMethod from './SelectMethod';

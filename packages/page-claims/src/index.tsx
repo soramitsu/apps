@@ -2,13 +2,13 @@
 // SPDX-License-Identifier: Apache-2.0
 
 import { AppProps as Props, ThemeProps } from '@polkadot/react-components/types';
-import { Option } from '@polkadot/types';
 import { EcdsaSignature, EthereumAddress, StatementKind } from '@polkadot/types/interfaces';
 
 import React, { useState, useCallback, useEffect, useRef } from 'react';
 import { Trans } from 'react-i18next';
 import styled from 'styled-components';
 import CopyToClipboard from 'react-copy-to-clipboard';
+import { Option } from '@polkadot/types';
 import { Button, Card, Columar, Column, Input, InputAddress, Tabs, Tooltip } from '@polkadot/react-components';
 import { useApi, useCall } from '@polkadot/react-hooks';
 import { TokenUnit } from '@polkadot/react-components/InputNumber';

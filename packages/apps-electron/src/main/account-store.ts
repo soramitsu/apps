@@ -1,10 +1,10 @@
 // Copyright 2017-2020 @polkadot/apps authors & contributors
 // SPDX-License-Identifier: Apache-2.0
 
-import { app } from 'electron';
-import { FileStore } from '@polkadot/ui-keyring/stores';
 import { KeyringJson } from '@polkadot/ui-keyring/types';
+import { app } from 'electron';
 import path from 'path';
+import { FileStore } from '@polkadot/ui-keyring/stores';
 
 import { IpcMainHandler } from './ipc-main-handler';
 import { registerIpcHandler } from './register-ipc-handler';

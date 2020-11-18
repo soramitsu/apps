@@ -32,8 +32,8 @@ module.exports = {
       'warn',
       {
         groups: [
-          '/^i18next$/',
-          '/^((?!polkadot\/types$).)*\/types.*$/',
+          '/^i18next|^@fortawesome\/fontawesome-svg-core/',
+          '/^((?!polkadot\/types(.*)).)*\/types.*|^@polkadot\/types\/types|@polkadot\/types\/interfaces|@polkadot\/apps-config\/settings\/endpoints|@polkadot\/types\/primitive\/types$/',
           'module',
           '/^@polkadot/',
           ['parent', 'sibling', 'index'],

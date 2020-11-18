@@ -3,10 +3,10 @@
 
 import { DeriveHeartbeats, DeriveStakingOverview } from '@polkadot/api-derive/types';
 import { AccountId, EraIndex, Nominations } from '@polkadot/types/interfaces';
-import { Authors } from '@polkadot/react-query/BlockAuthors';
 import { SortedTargets, ValidatorInfo } from '../types';
 
 import React, { useCallback, useContext, useMemo, useRef, useState } from 'react';
+import { Authors } from '@polkadot/react-query/BlockAuthors';
 import { Table } from '@polkadot/react-components';
 import { useApi, useCall, useLoadingDelay } from '@polkadot/react-hooks';
 import { BlockAuthorsContext } from '@polkadot/react-query';

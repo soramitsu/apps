@@ -3,9 +3,9 @@
 
 import { HeadData } from '@polkadot/types/interfaces';
 import { DeriveParachain } from '@polkadot/api-derive/types';
+import { ThemeProps } from '@polkadot/react-components/types';
 
 import React, { useCallback } from 'react';
-import { ThemeProps } from '@polkadot/react-components/types';
 import { useHistory } from 'react-router-dom';
 import styled from 'styled-components';
 import { Badge, Button, Icon } from '@polkadot/react-components';

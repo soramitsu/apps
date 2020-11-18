@@ -1,13 +1,13 @@
 // Copyright 2017-2020 @polkadot/app-claims authors & contributors
 // SPDX-License-Identifier: Apache-2.0
 
-import { Option } from '@polkadot/types';
 import { BalanceOf, EthereumAddress, StatementKind } from '@polkadot/types/interfaces';
+import { TxCallback } from '@polkadot/react-components/Status/types';
 
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
+import { Option } from '@polkadot/types';
 import { Button, Card, TxButton } from '@polkadot/react-components';
-import { TxCallback } from '@polkadot/react-components/Status/types';
 import { useApi } from '@polkadot/react-hooks';
 import { FormatBalance } from '@polkadot/react-query';
 

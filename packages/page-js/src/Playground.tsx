@@ -1,7 +1,6 @@
 // Copyright 2017-2020 @polkadot/app-js authors & contributors
 // SPDX-License-Identifier: Apache-2.0
 
-import { ApiPromise } from '@polkadot/api';
 import { KeyringInstance } from '@polkadot/keyring/types';
 import { ApiProps } from '@polkadot/react-api/types';
 import { AppProps as Props } from '@polkadot/react-components/types';
@@ -9,6 +8,7 @@ import { Log, LogType, Snippet } from './types';
 
 import React, { useCallback, useRef, useState, useEffect } from 'react';
 import styled from 'styled-components';
+import { ApiPromise } from '@polkadot/api';
 import { Button, Dropdown, Editor } from '@polkadot/react-components';
 import { useApi, useToggle } from '@polkadot/react-hooks';
 import uiKeyring from '@polkadot/ui-keyring';

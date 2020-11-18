@@ -7974,6 +7974,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"eslint-plugin-import-helpers@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "eslint-plugin-import-helpers@npm:1.1.0"
+  peerDependencies:
+    eslint: 5.x - 7.x
+  checksum: cbb97919078b66ee2c76689c63a2e46f00d1fbe8b7415265a88e99abff567961aecfa77f6cd3d3684ec236e0622fb1c3e73b96aac1eb762ff10576ef3a313034
+  languageName: node
+  linkType: hard
+
 "eslint-plugin-import@npm:^2.22.1":
   version: 2.22.1
   resolution: "eslint-plugin-import@npm:2.22.1"
@@ -14207,6 +14216,8 @@ fsevents@^1.2.7:
     electron: ^10.1.5
     electron-builder: ^22.9.1
     electron-builder-notarize: ^1.2.0
+    eslint-plugin-import: ^2.22.1
+    eslint-plugin-import-helpers: ^1.1.0
     i18next-scanner: ^2.11.0
     react: ^17.0.1
     react-dom: ^17.0.1

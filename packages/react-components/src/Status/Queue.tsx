@@ -5,12 +5,12 @@ import { SubmittableExtrinsic } from '@polkadot/api/promise/types';
 import { DispatchError } from '@polkadot/types/interfaces';
 import { ITuple, SignerPayloadJSON } from '@polkadot/types/types';
 import { ActionStatus, ActionStatusPartial, PartialQueueTxExtrinsic, PartialQueueTxRpc, QueueStatus, QueueTx, QueueTxExtrinsic, QueueTxRpc, QueueTxStatus, SignerCallback } from './types';
+import jsonrpc from '@polkadot/types/interfaces/jsonrpc';
 
 import React, { useCallback, useRef, useState } from 'react';
 import { SubmittableResult } from '@polkadot/api';
 import { registry } from '@polkadot/react-api';
 import { Bytes } from '@polkadot/types';
-import jsonrpc from '@polkadot/types/interfaces/jsonrpc';
 
 import { getContractAbi } from '../util';
 import { QueueProvider } from './Context';

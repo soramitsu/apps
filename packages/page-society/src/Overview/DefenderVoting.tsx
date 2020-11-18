@@ -3,9 +3,9 @@
 
 import React, { useRef, useState } from 'react';
 import { useToggle } from '@polkadot/react-hooks';
+import { Button, Dropdown, InputAddress, Modal, TxButton } from '@polkadot/react-components';
 
 import { useTranslation } from '../translate';
-import { Button, Dropdown, InputAddress, Modal, TxButton } from '@polkadot/react-components';
 
 interface Props {
   isMember: boolean;

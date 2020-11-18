@@ -8,10 +8,10 @@ import React from 'react';
 import styled from 'styled-components';
 import { UInt } from '@polkadot/types';
 import { formatNumber, isUndefined } from '@polkadot/util';
+import { BlockToTime } from '@polkadot/react-query';
 
 import Progress from './Progress';
 import Labelled from './Labelled';
-import { BlockToTime } from '@polkadot/react-query';
 
 interface ProgressProps {
   hideValue?: boolean;

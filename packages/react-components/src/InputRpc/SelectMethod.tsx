@@ -3,10 +3,9 @@
 
 import { DefinitionRpcExt } from '@polkadot/types/types';
 import { DropdownOptions } from '../util/types';
+import jsonrpc from '@polkadot/types/interfaces/jsonrpc';
 
 import React from 'react';
-
-import jsonrpc from '@polkadot/types/interfaces/jsonrpc';
 
 import Dropdown from '../Dropdown';
 import { classes } from '../util';

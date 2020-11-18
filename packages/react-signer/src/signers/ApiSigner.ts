@@ -2,11 +2,11 @@
 // SPDX-License-Identifier: Apache-2.0
 
 import { Signer, SignerResult } from '@polkadot/api/types';
-import { SubmittableResult } from '@polkadot/api';
 import { QueueTxPayloadAdd, QueueTxMessageSetStatus, QueueTxStatus } from '@polkadot/react-components/Status/types';
 import { Hash } from '@polkadot/types/interfaces';
 import { SignerPayloadJSON } from '@polkadot/types/types';
 
+import { SubmittableResult } from '@polkadot/api';
 import { registry } from '@polkadot/react-api';
 import { ClassOf } from '@polkadot/types/create';
 

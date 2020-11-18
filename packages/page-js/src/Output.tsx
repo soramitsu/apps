@@ -2,9 +2,9 @@
 // SPDX-License-Identifier: Apache-2.0
 
 import { Log } from './types';
+import { ThemeProps } from '@polkadot/react-components/types';
 
 import React from 'react';
-import { ThemeProps } from '@polkadot/react-components/types';
 import styled from 'styled-components';
 import { isError, isNull, isUndefined } from '@polkadot/util';
 
