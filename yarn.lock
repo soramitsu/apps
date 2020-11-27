@@ -2260,7 +2260,7 @@ __metadata:
     "@edgeware/node-types": ^3.0.10
     "@laminar/type-definitions": ^0.2.0-beta.141
     "@polkadot/networks": ^4.2.1
-    "@sora-substrate/type-definitions": ^0.1.4
+    "@sora-substrate/type-definitions": ^0.1.5
     "@subsocial/types": ^0.4.23
     i18next: ^19.8.4
   languageName: unknown
@@ -2937,12 +2937,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sora-substrate/type-definitions@npm:^0.1.4":
-  version: 0.1.4
-  resolution: "@sora-substrate/type-definitions@npm:0.1.4"
+"@sora-substrate/type-definitions@npm:^0.1.5":
+  version: 0.1.5
+  resolution: "@sora-substrate/type-definitions@npm:0.1.5"
   dependencies:
     "@open-web3/orml-type-definitions": ^0.6.0-beta.26
-  checksum: a5e3035f9d7279010841fa656d3a8de582ce51988adaa53d5f813d44d77347780629d70c16671e5fe50db9398fba6f687e78ff383888b71393ffd656effa4ec8
+  checksum: c931f093dda6111fd276356559b6d6c8da214da8701e69371f1cf444761e23fec53a0756d532095fea8d06a1e8035026d7fec4c54f130197ee97671f32ac3cc1
   languageName: node
   linkType: hard
 
