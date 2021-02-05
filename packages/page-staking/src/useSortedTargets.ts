@@ -22,7 +22,7 @@ const EMPTY_PARTIAL = {};
 const DEFAULT_FLAGS_ELECTED = { withController: true, withExposure: true, withPrefs: true };
 const DEFAULT_FLAGS_WAITING = { withController: true, withPrefs: true };
 
-function mapIndex (mapBy: TargetSortBy): (info: ValidatorInfo, index: number) => ValidatorInfo {
+function mapIndex(mapBy: TargetSortBy): (info: ValidatorInfo, index: number) => ValidatorInfo {
   return (info, index): ValidatorInfo => {
     info[mapBy] = index + 1;
 
@@ -30,11 +30,11 @@ function mapIndex (mapBy: TargetSortBy): (info: ValidatorInfo, index: number) =>
   };
 }
 
-function isWaitingDerive (derive: DeriveStakingElected | DeriveStakingWaiting): derive is DeriveStakingWaiting {
+function isWaitingDerive(derive: DeriveStakingElected | DeriveStakingWaiting): derive is DeriveStakingWaiting {
   return !(derive as DeriveStakingElected).nextElected;
 }
 
-function sortValidators (list: ValidatorInfo[]): ValidatorInfo[] {
+function sortValidators(list: ValidatorInfo[]): ValidatorInfo[] {
   const existing: string[] = [];
 
   return list
@@ -79,7 +79,7 @@ function sortValidators (list: ValidatorInfo[]): ValidatorInfo[] {
     );
 }
 
-function extractSingle (api: ApiPromise, allAccounts: string[], derive: DeriveStakingElected | DeriveStakingWaiting, favorites: string[], { activeEra, eraLength, lastEra, sessionLength }: LastEra, historyDepth?: BN): [ValidatorInfo[], string[]] {
+function extractSingle(api: ApiPromise, allAccounts: string[], derive: DeriveStakingElected | DeriveStakingWaiting, favorites: string[], { activeEra, eraLength, lastEra, sessionLength }: LastEra, historyDepth?: BN): [ValidatorInfo[], string[]] {
   const nominators: Record<string, boolean> = {};
   const emptyExposure = api.createType('Exposure');
   const earliestEra = historyDepth && lastEra.sub(historyDepth).iadd(BN_ONE);
@@ -158,7 +158,7 @@ function extractSingle (api: ApiPromise, allAccounts: string[], derive: DeriveSt
   return [list, Object.keys(nominators)];
 }
 
-function extractInfo (api: ApiPromise, allAccounts: string[], electedDerive: DeriveStakingElected, waitingDerive: DeriveStakingWaiting, favorites: string[], totalIssuance: BN, lastEraInfo: LastEra, historyDepth?: BN): Partial<SortedTargets> {
+function extractInfo(api: ApiPromise, allAccounts: string[], electedDerive: DeriveStakingElected, waitingDerive: DeriveStakingWaiting, favorites: string[], totalIssuance: BN, lastEraInfo: LastEra, historyDepth?: BN): Partial<SortedTargets> {
   const [elected, nominators] = extractSingle(api, allAccounts, electedDerive, favorites, lastEraInfo, historyDepth);
   const [waiting] = extractSingle(api, allAccounts, waitingDerive, favorites, lastEraInfo);
   const activeTotals = elected
@@ -172,7 +172,7 @@ function extractInfo (api: ApiPromise, allAccounts: string[], electedDerive: Der
   // add the explicit stakedReturn
   !avgStaked.isZero() && elected.forEach((e): void => {
     if (!e.skipRewards) {
-      e.stakedReturn = inflation.stakedReturn * avgStaked.mul(BN_MILLION).div(e.bondTotal).toNumber() / BN_MILLION.toNumber();
+      e.stakedReturn = inflation.stakedReturn * avgStaked.div(e.bondTotal).toNumber();
       e.stakedReturnCmp = e.stakedReturn * (100 - e.commissionPer) / 100;
     }
   });
@@ -221,7 +221,7 @@ const transformEra = {
   })
 };
 
-export default function useSortedTargets (favorites: string[], withLedger: boolean): SortedTargets {
+export default function useSortedTargets(favorites: string[], withLedger: boolean): SortedTargets {
   const { api } = useApi();
   const { allAccounts } = useAccounts();
   const historyDepth = useCall<BN>(api.query.staking.historyDepth);
